@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var type_assertions_1 = require("type-assertions");
+var index_1 = require("./index");
+(0, type_assertions_1.typeAssert)();
+var filtered1 = (0, index_1.filterPersons)(index_1.persons, 'user', {});
+(0, type_assertions_1.typeAssert)();
+var filtered2 = (0, index_1.filterPersons)(index_1.persons, 'user', { name: 'Max Mustermann', age: 25, occupation: 'Chimney sweep' });
+(0, type_assertions_1.typeAssert)();
+var filtered3 = (0, index_1.filterPersons)(index_1.persons, 'admin', {});
+(0, type_assertions_1.typeAssert)();
+var filtered4 = (0, index_1.filterPersons)(index_1.persons, 'admin', { name: 'Jane Doe', age: 32, role: 'Administrator' });
+(0, type_assertions_1.typeAssert)();
+(0, type_assertions_1.typeAssert)();
+(0, type_assertions_1.typeAssert)();
+(0, type_assertions_1.typeAssert)();
+(0, type_assertions_1.typeAssert)();
