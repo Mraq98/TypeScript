@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var type_assertions_1 = require("type-assertions");
+var index_1 = require("./index");
+var pair1 = (0, index_1.swap)(123, 'hello');
+(0, type_assertions_1.typeAssert)();
+var pair2 = (0, index_1.swap)(true, false);
+(0, type_assertions_1.typeAssert)();
+var pair3 = (0, index_1.swap)(null, undefined);
+(0, type_assertions_1.typeAssert)();
